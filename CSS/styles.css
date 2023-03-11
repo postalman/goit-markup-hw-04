@@ -327,7 +327,7 @@ img {
 .button-all:hover,
 .button-all:focus {
   color: var(--white-color);
-  background-color: var(--accent-color);
+  background-color: var(--pressed-state);
 }
 .button-all {
   padding: 12px 24px;
