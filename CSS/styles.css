@@ -427,20 +427,23 @@ img {
   gap: 24px;
   width: 232px;
   height: 40px;
-
-  
 }
 
-.team-social-list {display: flex;
-  width: 232px;
-height: 40px;
-  list-style: none;}
+.team-social-list {
+  display: flex;
 
-.social-icons {width: 16px;
-height: 16px;}
+  list-style: none;
+}
 
-.team-social-links {background-color: #4d5ae5;
-margin-right: 24px;
-width: 40px;
-height: 40px;
-border-radius: 50%;}
+.social-icons {
+  width: 16px;
+  height: 16px;
+}
+
+.team-social-links {
+  background-color: #4d5ae5;
+  margin-right: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
