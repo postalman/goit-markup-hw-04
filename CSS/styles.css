@@ -380,7 +380,10 @@ img {
 .project-card {
   background: var(--white-color);
   margin-bottom: 48px;
+  cursor: pointer;
 }
+.project-card:hover,
+.project-card:focus {box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}
 
 .project-card:not(:nth-child(3n)) {
   margin-right: 24px;
@@ -430,6 +433,7 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .team-social-list {
@@ -476,9 +480,10 @@ margin-bottom: 16px;}
   gap: 24px;
   width: 40px;
   height: 40px;
-  border-radius: 50%;}
+  border-radius: 50%;
+  cursor:pointer;}
 
   .footer-social-icons {width: 24px;
     height: 24px;}
 
-  .1
+  
