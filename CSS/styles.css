@@ -1,6 +1,6 @@
 :root {
   --accent-color: #4d5ae5;
-  --pressed-state: #404BBF;
+  --pressed-state: #404bbf;
   --primary-text-color: #434455;
   --secondary-text-color: #2e2f42;
   --white-color: #ffffff;
@@ -113,12 +113,8 @@ img {
   padding-top: 188px;
   padding-bottom: 188px;
   background-color: var(--secondary-text-color);
-  background-image: linear-gradient(
-    to right,
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)),
-    url(../images/group-people-working-website-template.jpg)
-  ;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/group-people-working-website-template.jpg);
   background-position: center;
   background-size: cover;
   height: 600px;
@@ -209,7 +205,8 @@ img {
   color: var(--secondary-text-color);
   margin-bottom: 72px;
 }
-.section-title {margin: 0;
+.section-title {
+  margin: 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -264,16 +261,26 @@ img {
   padding: 0;
 }
 
-.feature-icons {display: block;
-  content: "";
-  width: 264px;
-  height: 112px;
-  border-radius: 4px;
-  background-color: #F4F4FD;
-}
-
 .feature:not(:last-child) {
   margin-right: 24px;
+}
+
+.feature-icons-block {display: flex;
+  padding: 0;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  
+  background: var(--button-background--);
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+}
+
+.feature-icons {
+  width: 64px;
+  height: 64px;
 }
 
 .information-list {
@@ -309,7 +316,8 @@ img {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.footer-text {margin: 0;
+.footer-text {
+  margin: 0;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--footer--);
@@ -376,8 +384,6 @@ img {
   margin-right: 24px;
 }
 
-
-
 .border {
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
@@ -388,7 +394,6 @@ img {
 }
 
 .section {
-  
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -411,4 +416,3 @@ img {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-
