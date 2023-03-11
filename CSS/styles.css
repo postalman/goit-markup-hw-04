@@ -242,6 +242,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  margin-bottom: 8px;
 }
 
 .fetaure-section {
@@ -433,6 +434,7 @@ img {
   display: flex;
 
   list-style: none;
+  gap: 24px;
 }
 
 .social-icons {
@@ -442,7 +444,6 @@ img {
 
 .team-social-links {
   background-color: #4d5ae5;
-  margin-right: 24px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
