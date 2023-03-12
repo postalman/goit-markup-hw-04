@@ -6,6 +6,7 @@
   --white-color: #ffffff;
   --footer--: #e7e9fc;
   --button-background--: #f4f4fd;
+  --customers-logo: #8e8f99;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -117,8 +118,8 @@ img {
     url(../images/group-people-working-website-template.jpg);
   background-position: center;
   background-size: cover;
-  height: 600px;
-  max-width: 1400px;
+  
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -146,7 +147,7 @@ img {
 
 .address-link:hover,
 .address-link:focus {
-  color: var(--accent-color);
+  color: var(--pressed-state);
 }
 
 .address-link {
@@ -294,7 +295,7 @@ img {
   margin-right: 24px;
 }
 .ourteam {
-  background: #f4f4fd;
+  background: var(--button-background--);
   text-align: center;
 }
 .team-list {
@@ -307,7 +308,7 @@ img {
 }
 
 .team-card {
-  background: #ffffff;
+  background: var(--white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -422,20 +423,6 @@ img {
   color: var(--primary-text-color);
 }
 
-.team-social-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  gap: 24px;
-  background-color: #4d5ae5;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
 .team-social-list {
   display: flex;
 
@@ -450,13 +437,16 @@ img {
   
 }
 
-.team-social-links:hover,
-.team-social-links:focus {background-color: var(--pressed-state);}
+.team-social-list-links:hover,
+.team-social-list-links:focus {background-color: var(--pressed-state);}
 
 
 
 .footer-flex {display: flex;
-gap: 120px;}
+align-items: baseline;}
+
+.footer-box {margin-right: 120px;}
+
 .footer-soc-text {font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.5;
@@ -468,22 +458,88 @@ margin-bottom: 16px;}
   list-style: none;
   gap: 16px;}
 
-  .footer-social-links:hover,
-  .footer-social-links:focus {background-color: #31D0AA;;}
+  .footer-social-list-links:hover,
+  .footer-social-list-links:focus {background-color: #31D0AA;;}
 
-  .footer-social-links {background-color: rgba(255, 255, 255, 0.1);
-    display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  gap: 24px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor:pointer;}
+  
 
   .footer-social-icons {width: 24px;
     height: 24px;}
 
+    .customers {text-align: center}
+
+    .customers-flex {display: inline-block;
+      text-align: center;
+    }  
+
+    .customers-title {font-weight: 700;
+      font-size: 36px;
+      line-height: 1.11;
+      text-align: center;
+      justify-content: center;
+      letter-spacing: 0.02em;
+      text-transform: capitalize;         
+      color: var(--secondary-text-color);
+    margin-top: 130px;
+  margin-bottom: 72px;}
+
+  .customers-logo {display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+  list-style: none;
+margin-bottom: 120px;}
+
   
+
+    .customers-logo-link:hover,
+    .customers-logo-link:focus {border-color: var(--pressed-state);}
+
+    .customers-logo-link:is(:hover, :focus) .customers-icons {fill: var(--pressed-state);}
+
+    
+
+    .customers-icons {width: 104px;
+    height: 56px;
+    fill: var(--customers-logo)  
+  }
+
+  .customers-icons:hover,
+  .customers-icons:focus {fill: var(--pressed-state);}
+
+  
+  .team-social-list-links {display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    
+    background-color: var(--accent-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;}
+
+    .footer-social-list-links {background-color: rgba(255, 255, 255, 0.1);
+      display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor:pointer;
+    }
+
+    .customers-logo-link {display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      width: 168px;
+      height: 88px;
+      border: 1px solid #8E8F99;
+      border-radius: 4px;}
+
+    
